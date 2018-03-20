@@ -19,7 +19,7 @@ filetype plugin indent on
 
 " General options
 set incsearch
-set ignorecase smartcase 
+set ignorecase smartcase
 
 " Use two space tabs
 set tabstop=2
@@ -31,10 +31,14 @@ set backspace=indent,eol,start
 " Strip trailing whitespace
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+let g:strip_whitelines_at_eof=1
+let g:better_whitespace_skip_empty_lines=0
+let g:better_whitespace_filetypes_blacklist=[]
 
 " No menus and no toolbar
-"set guioptions-=m  
+"set guioptions-=m
 set guioptions-=T
 
 set guifont=DejaVu\ Sans\ Mono:h11:cANSI
 
+let g:EditorConfig_exec_path = 'editorconfig'

@@ -38,6 +38,9 @@ let g:better_whitespace_filetypes_blacklist=[]
 " EditorConfig binary location (PATH)
 let g:EditorConfig_exec_path = 'editorconfig'
 
+" Force activation of 'vim-surround'
+let g:surround_no_mappings=0
+
 " No menus and no toolbar
 "set guioptions-=m
 set guioptions-=T

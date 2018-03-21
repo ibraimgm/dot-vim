@@ -35,10 +35,13 @@ let g:strip_whitelines_at_eof=1
 let g:better_whitespace_skip_empty_lines=0
 let g:better_whitespace_filetypes_blacklist=[]
 
+" EditorConfig binary location (PATH)
+let g:EditorConfig_exec_path = 'editorconfig'
+
 " No menus and no toolbar
 "set guioptions-=m
 set guioptions-=T
-
 set guifont=DejaVu\ Sans\ Mono:h11:cANSI
 
-let g:EditorConfig_exec_path = 'editorconfig'
+" Custom commands
+nnoremap gt iTask<space><ESC>pa<space>-<space>

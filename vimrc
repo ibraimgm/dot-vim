@@ -46,11 +46,18 @@ let g:surround_no_mappings=0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+"vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+
 " No menus and no toolbar
 "set guioptions-=m
 set guioptions-=T
-set guifont=DejaVu\ Sans\ Mono:h11:cANSI
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11:cANSI
 
 " Custom commands
 nnoremap gt iTask<space><ESC>pa<space>-<space>
 nnoremap <c-b> :CtrlPBuffer<CR>
+nnoremap <M-Right> :bn<CR>
+nnoremap <M-Left> :bp<CR>

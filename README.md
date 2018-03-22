@@ -15,6 +15,8 @@ First, clone and update the submodules. Then, replace your `~/.vimrc`.
 To make Editorconfig work, please install [EditorConfig Core](https://github.com/editorconfig/editorconfig-core-c)
 and put it in your `PATH`.
 
+For airline, please install the corresponding patched font
+
 ## Update
 
 Just pull the changes and update the submodules. For example:

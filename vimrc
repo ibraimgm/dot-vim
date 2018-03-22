@@ -41,6 +41,10 @@ let g:EditorConfig_exec_path = 'editorconfig'
 " Force activation of 'vim-surround'
 let g:surround_no_mappings=0
 
+" CtrP configuration
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " No menus and no toolbar
 "set guioptions-=m
 set guioptions-=T
@@ -48,3 +52,4 @@ set guifont=DejaVu\ Sans\ Mono:h11:cANSI
 
 " Custom commands
 nnoremap gt iTask<space><ESC>pa<space>-<space>
+nnoremap <c-b> :CtrlPBuffer<CR>

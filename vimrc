@@ -2,10 +2,11 @@
 au GUIEnter * simalt ~x
 
 " Basic clipboard/utf8 support
-set clipboard=unnamedplus
+set clipboard=unnamed
 set enc=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf8,prc
+set fencs=ucs-bom,utf-8,latin1
+setg bomb
+setg fenc=latin1
 
 " Enable/load packages
 set nocompatible

@@ -28,6 +28,7 @@ set shiftwidth=2
 set expandtab
 set backspace=2
 set backspace=indent,eol,start
+set cursorline
 
 " Strip trailing whitespace
 let g:better_whitespace_enabled=1
@@ -54,10 +55,12 @@ let g:airline_skip_empty_sections = 1
 " No menus and no toolbar
 "set guioptions-=m
 set guioptions-=T
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11:cANSI
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cANSI
 
 " Custom commands
 nnoremap gt iTask<space><ESC>pa<space>-<space>
 nnoremap <c-b> :CtrlPBuffer<CR>
 nnoremap <M-Right> :bn<CR>
 nnoremap <M-Left> :bp<CR>
+nmap <F8> :TagbarToggle<CR>
+nmap <C-F8> :NERDTreeToggle<CR>
